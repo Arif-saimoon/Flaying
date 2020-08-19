@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header section */
+#header-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('img/bg-8.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 580px;
+    position: relative;
+}
+#navbarNav li a{
+    font-weight: 600;
+    color: white;
+    transition: .3s;
+}
+#navbarNav li a:hover{
+    color: #b1b1b1;
+}
+#header-section nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(47, 47, 47, 0.8);
+    z-index: 9999;
+}
+/* Services section */
+#services{
+    background: linear-gradient(rgba(79, 221, 185, 0.8), rgba(79, 221, 185, 0.8)), url(img/bg-2.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#services .heading-border::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #e9e9e9;
+    width: 85px;
+    margin: auto;
+    margin-top: 20px;
+}
+#services .fa{
+    font-size: 55px;
+}
+
+/* Team section */
+#team{
+    background: linear-gradient(rgba(210, 233, 250, 0.9), rgba(210, 233, 250, 0.9)), url(img/bg-2.jpg) no-repeat center center;
+    background-size: cover;
+}
+#team .heading-border::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #616161;
+    width: 85px;
+    margin: auto;
+    margin-top: 20px;
+}
+#team a {
+    color: #fff!important;
+}
+#team .fa{
+    background: #90d7f3;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+#team a:hover .fa{
+    background: #2f2f2f;
+    transform: scale(1.2);
+}
+/* Skills section */
+#skill{
+    background: linear-gradient(rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(img/bg-4.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#skill .heading-border::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #b1b1b1;
+    width: 85px;
+    margin: auto;
+    margin-top: 20px;
+}
+svg.radial-progress circle{
+    stroke-width: 7;
+}
+svg.radial-progress text{
+    fill: #393939;
+    font-size: 15px;
+}
+svg.web-design circle{
+    stroke: #ff0000;
+}
+svg.graphic-design circle{
+    stroke: #0004ff;
+}
+svg.html-css circle{
+    stroke: #ff0095;
+}
+svg.web-development circle{
+    stroke: #00eaff;
+}
+/* portfolio section */
+#portfolio{
+    background: linear-gradient(rgba(255, 214, 132, 0.9), rgba(255, 214, 132, 0.9)), url(img/bg-9.jpg) no-repeat center top;
+    background-size: cover;
+}
+#portfolio .heading-border::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #ffc34a;
+    width: 85px;
+    margin: auto;
+    margin-top: 20px;
+}
+#portfolio img{
+    width: 100%;
+    height: 300px;
+}
+#portfolio .mixitup-control-active{
+    background: #ffc34a;
+}
+#portfolio .btn-outline-dark.focus, .btn-outline-dark:focus{
+    box-shadow: none;
+}
+/*Testimonial Section*/
+#testimonial {
+    background: linear-gradient(rgba(246, 76, 141, 0.8), rgba(246, 76, 141, 0.8)), url(img/bg-7.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#testimonial .heading-border::after{
+    content: "";
+    display: block;
+    height: 4px;
+    background: #eeeeee;
+    width: 85px;
+    margin: auto;
+    margin-top: 20px;
+}
+#testimonial .italic{
+    font-style: italic;
+}
+/*Contact Section*/
+#contact {
+    background: linear-gradient(rgba(64, 62, 192, 0.801), rgba(64, 62, 192, 0.801)), url(img/bg-5.jpg) no-repeat center top;
+    background-size: cover;
+}
+#contact .card{
+    background-color: rgba(74, 64, 189, 0.87);
+}
+#contact .form-control{
+    background-color: rgba(40, 38, 119, 0.801);
+    border: 0;
+}
+#contact .form-control::placeholder{
+    color: #fff!important;
+    opacity: .7;
+}
+/*Footer Section*/
+#footer{
+    background: rgb(74, 64, 189);
+}
+#footer .fa{
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+    transition: .3s;
+}
+#footer .fa:hover{
+    color: #cecece;
+    transform: scale(1.1);
+}
+
+
+
+
+
+@media(max-width: 991px) {
+    #testimonial .text-center-md{
+        text-align: center;
+    }
+}
